@@ -47,7 +47,9 @@ rm -rf cache/stages_rootfs
 . config/binary
 
 # get LB_ARCHITECTURE and LB_DISTRIBUTION
-cat config/bootstrap 
+pwd
+ls -las config
+ls -las config/bootstrap
 config/bootstrap
 
 # save variables that are needed by chroot_local-hooks
