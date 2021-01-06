@@ -44,9 +44,9 @@ then
           ;;
        *)
           [ "$SERIAL" != latest ] \
-              || fatal "APT snapshots are not frozen for the $ARCHIVE archive," \
+              || echo "APT snapshots are not frozen for the $ARCHIVE archive," \
                        "which should happen neither on feature/bullseye nor on"  \
-                        "a branch based on $BASE_BRANCH"
+                        "a branch based on $BASE_BRANCH -- IGNORING"
     esac
     if version_was_released "$(version_in_changelog)"; then
         git_on_a_tag \
