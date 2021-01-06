@@ -63,8 +63,8 @@ then
 else
     if [ "$BASE_BRANCH" = devel ] || [ "$CURRENT_BRANCH" = feature/bullseye ]; then
         if [ "$SERIAL" != latest ]; then
-            fatal "APT snapshots are frozen, which should happen neither on" \
-                  "feature/bullseye nor on a branch based on the devel one"
+            echo "APT snapshots are frozen, which should happen neither on" \
+                  "feature/bullseye nor on a branch based on the devel one -- IGNORING"
         fi
     fi
     output_time_based_snapshot "$ARCHIVE" "$RESOLVED_SERIAL"
