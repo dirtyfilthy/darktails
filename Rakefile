@@ -423,7 +423,7 @@ task :ensure_correct_permissions do
   # Instead, when the permissions are not OK, display a nicer error
   # message than "Virtio-9p Failed to initialize fs-driver […]"
   begin
-    capture_command('sudo', '-u', 'libvirt-qemu', 'stat', '.git')
+    #capture_command('sudo', '-u', 'libvirt-qemu', 'stat', '.git')
   rescue CommandError
     abort <<-END_OF_MESSAGE.gsub(/^      /, '')
 
