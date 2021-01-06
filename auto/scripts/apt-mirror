@@ -43,7 +43,7 @@ then
                         "a branch based on $BASE_BRANCH"
           ;;
        *)
-          [ "$SERIAL" != latest ] \
+          [ "$SERIAL" = IGNORING ] \
               || echo "APT snapshots are not frozen for the $ARCHIVE archive," \
                        "which should happen neither on feature/bullseye nor on"  \
                         "a branch based on $BASE_BRANCH -- IGNORING"
@@ -62,7 +62,7 @@ then
     fi
 else
     if [ "$BASE_BRANCH" = devel ] || [ "$CURRENT_BRANCH" = feature/bullseye ]; then
-        if [ "$SERIAL" != latest ]; then
+        if [ "$SERIAL" = IGNORING ]; then
             echo "APT snapshots are frozen, which should happen neither on" \
                   "feature/bullseye nor on a branch based on the devel one -- IGNORING"
         fi
