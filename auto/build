@@ -47,10 +47,19 @@ rm -rf cache/stages_rootfs
 . config/binary
 
 # get LB_ARCHITECTURE and LB_DISTRIBUTION
-pwd
-ls -las config
-ls -las config/bootstrap
-config/bootstrap
+echo "#"
+echo "#"
+echo "# config/bootstrap"
+echo "#"
+echo "#"
+echo "#"
+cat config/bootstrap
+. config/bootstrap
+echo "#"
+echo "#"
+echo "# FIN"
+echo "#"
+echo "#"
 
 # save variables that are needed by chroot_local-hooks
 echo "KERNEL_VERSION=${KERNEL_VERSION}" \
