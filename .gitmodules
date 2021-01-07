@@ -15,3 +15,7 @@
 	path = submodules/sof
 	url = https://github.com/thesofproject/sof-bin.git
 	branch = stable-v1.5.1
+[submodule "submodules/darktails-monero"]
+	path = submodules/darktails-monero
+	url = https://github.com/dirtyfilthy/darktails-monero.git
+	branch = darktails-devel
