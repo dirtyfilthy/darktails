@@ -1,3 +1,14 @@
+darktails (0.01) unstable; urgency=low
+
+  * Added monero-gui with default datktails run onion node:
+    (wnslzby43a5a7qfywoocm42ksvfhitecosw7tkoc3w3od5qkg5awrcad.onion:18081)
+
+  * javascript.enabled=false in torbrowser
+
+  * set dark.fail as default homepage
+
+  * grub splash page 
+
 tails (4.14) unstable; urgency=medium
 
   * Grant the user read access to external Persistent Storage (tails/tails!300)
