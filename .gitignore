@@ -33,6 +33,7 @@
 /config/chroot_local-includes/usr/share/tails/greeter/supported_languages
 /config/chroot_local-includes/usr/share/tails/greeter/supported_locales
 /config/chroot_local-includes/usr/local/bin/monero*
+/config/chroot_local-packages
 /.lock
 /.stage
 /source
